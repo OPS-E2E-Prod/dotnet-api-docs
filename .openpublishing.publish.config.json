@@ -40,6 +40,8 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
+      "base_path": "dotnet",
+      "site_name": "Docs",
       "customized_template_paths": [
         "_dependentPackages/memberpage.plugins/content"
       ],
@@ -81,9 +83,33 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "samples",
+      "url": "https://github.com/dotnet/samples",
+      "branch": "master",
+      "branch_mapping": {
+        "live": "live"
+      }
     }
   ],
-  "branch_target_mapping": {},
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf",
+      "Intellisense"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
   "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
