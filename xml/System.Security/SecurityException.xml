@@ -1,4 +1,4 @@
-﻿<Type Name="SecurityException" FullName="System.Security.SecurityException">
+<Type Name="SecurityException" FullName="System.Security.SecurityException">
   <TypeSignature Language="C#" Value="public class SecurityException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SecurityException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityException" />
@@ -56,6 +56,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -315,6 +316,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -974,6 +976,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-instance-note](~/includes/untrusted-data-instance-note.md)]
+
  This property contains one of the following:  
   
 -   Information about the method that the failed assembly was executing when the security check that triggered the exception occurred.  

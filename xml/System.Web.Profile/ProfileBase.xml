@@ -1,4 +1,4 @@
-﻿<Type Name="ProfileBase" FullName="System.Web.Profile.ProfileBase">
+<Type Name="ProfileBase" FullName="System.Web.Profile.ProfileBase">
   <TypeSignature Language="C#" Value="public class ProfileBase : System.Configuration.SettingsBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileBase extends System.Configuration.SettingsBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileBase" />
@@ -24,12 +24,16 @@
   
  To create an instance of a user profile in an ASP.NET application, it is recommended that you use the <xref:System.Web.Profile.ProfileBase.Create%2A> method.  
   
-   
-  
+## Notes to Inheritors   
+
+You can create a custom profile implementation that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the configuration element. You can specify a custom user-profile type in the web.config file with the `inherits` attribute of the configuration element, as shown in the following example. The code for the `EmployeeProfile` class is included in the Example section of this topic. 
+
+[!code-xml[System.Web.Profile.ProfileBase-Config](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/config.xml)]  
+
 ## Examples  
  The following code example shows a Web.config file that specifies a user profile that contains a `ZipCode` property of type `string` and a `RecentSearchList` property of type <xref:System.Collections.Specialized.StringCollection>. The generated <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will have strongly typed accessors for each of the specified properties.  
   
-```  
+```xml  
 <configuration>  
   <system.web>  
     <anonymousIdentification enabled="true" />  
@@ -47,7 +51,7 @@
 </configuration>  
 ```  
   
- The following code example shows an ASP.NET page that reads and sets the `ZipCode` property specified for the user profile. Before attempting to run this code, set the provider to the default `AspNetSqlProvider` in the ASP.NET configuration settings for the Web site.  
+ The following example shows an ASP.NET page that reads and sets the `ZipCode` property specified for the user profile. Before attempting to run this code, set the provider to the default `AspNetSqlProvider` in the ASP.NET configuration settings for the Web site.  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/VB/defaultvb.aspx#1)]  
@@ -62,33 +66,7 @@
   
  ]]></format>
     </remarks>
-    <block subset="none" type="overrides">
-      <para>You can create a custom profile implementation that inherits from the <see cref="T:System.Web.Profile.ProfileBase" /> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the Web.config file with the <see langword="inherits" /> attribute of the  configuration element, as shown in the following example. The code for the <c>EmployeeProfile</c> class is included in the Example section of this topic.  
-  
-```  
-&lt;profile inherits="Samples.AspNet.Profile.EmployeeProfile"  
-  defaultProvider="SqlProvider"&gt;  
-  &lt;providers&gt;  
-    &lt;clear /&gt;  
-    &lt;add  
-      name="SqlProvider"  
-      type="System.Web.Profile.SqlProfileProvider"   
-      connectionStringName="SqlServices"   
-      description="SQL Profile Provider for Sample"/&gt;   
-    &lt;add  
-      name="EmployeeInfoProvider"  
-      type="System.Web.Profile.SqlProfileProvider"   
-      connectionStringName="SqlServices"   
-      description="SQL Profile Provider for Employee Info"/&gt;   
-  &lt;/providers&gt;  
-  
-  &lt;properties&gt;  
-    &lt;add name="GarmentSize" /&gt;  
-  &lt;/properties&gt;  
-&lt;/profile&gt;  
-```
-      </para>
-    </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,7 +100,7 @@
 ## Examples  
  The following Web.config file specifies a user profile that contains a `ZipCode` property of type `string` and a `RecentSearchList` property of type <xref:System.Collections.Specialized.StringCollection>. The generated <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will have strongly typed accessors for each of the specified properties.  
   
-```  
+```xml  
 <configuration>  
    <connectionStrings>  
        <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
@@ -184,6 +162,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -193,6 +172,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an instance of a user profile.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Create">
@@ -264,6 +244,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -333,6 +314,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProfileGroup">
@@ -369,7 +351,7 @@
 ## Examples  
  The following Web.config file specifies a user profile that contains group of properties with a group name of `Address`. The grouped properties generated for the <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will be preceded by the group name. For example, `Profile.Address.Street`.  
   
-```  
+```xml  
 <configuration>  
   <connectionStrings>  
     <add name="SqlServices" connectionString=  
@@ -438,6 +420,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">The specified profile property group name was not found in the  configuration section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -494,6 +477,7 @@
  -or-  
   
  The provider for the specified profile property did not recognize the specified property.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -529,6 +513,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAnonymous">
@@ -559,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -591,6 +577,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -644,6 +631,7 @@
  The provider for the specified profile property did not recognize the specified property.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a property value that was marked as read-only.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">An attempt was made to assign a value to a property using an incompatible type.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastActivityDate">
@@ -673,6 +661,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedDate">
@@ -702,6 +691,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -760,6 +750,7 @@
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -791,6 +782,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValue">
@@ -850,6 +842,7 @@
  The provider for the specified profile property did not recognize the specified property.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a value value on a property that was marked as read-only.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">An attempt was made to assign a value to a property using an incompatible type.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -886,6 +879,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

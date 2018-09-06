@@ -1,4 +1,4 @@
-﻿<Type Name="BaseDataList" FullName="System.Web.UI.WebControls.BaseDataList">
+<Type Name="BaseDataList" FullName="System.Web.UI.WebControls.BaseDataList">
   <TypeSignature Language="C#" Value="public abstract class BaseDataList : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseDataList extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BaseDataList" />
@@ -925,6 +925,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.GridLines" />
+        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -1521,7 +1522,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event is raised when a different item is selected in a data listing control between posts to the server.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

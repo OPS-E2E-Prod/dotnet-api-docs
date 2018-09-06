@@ -1,4 +1,4 @@
-﻿<Type Name="PrincipalSearcher" FullName="System.DirectoryServices.AccountManagement.PrincipalSearcher">
+<Type Name="PrincipalSearcher" FullName="System.DirectoryServices.AccountManagement.PrincipalSearcher">
   <TypeSignature Language="C#" Value="public class PrincipalSearcher : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrincipalSearcher extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
@@ -30,6 +30,8 @@
  ]]></format>
     </remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -41,6 +43,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property must be set before the Principal searcher object can be used to perform a search.</summary>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -66,6 +70,8 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property must be set before the Principal searcher object can be used to perform a search.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +104,8 @@
   
  The <paramref name="queryFilter" /> parameter cannot be null or empty.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -140,6 +148,8 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -172,6 +182,8 @@
         <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> object.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -213,6 +225,8 @@
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
         <exception cref="T:System.ArgumentException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -256,6 +270,8 @@
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
         <exception cref="T:System.ArgumentException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingSearcher">
@@ -298,6 +314,8 @@
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingSearcherType">
@@ -329,6 +347,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QueryFilter">
@@ -363,7 +383,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The principal object contained in this property can be any type of object derived from the principal class; computer, user, or group. The <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> can also be an extended principal type that is defined by extending either <xref:System.DirectoryServices.AccountManagement.Principal>, <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal> or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal>. The type of the derived class object that is passed to this property determines the type of object that is queried. The resulting query contains a logical AND of all the properties set on the specified principal object. For more information, see the Query by Example overview topic. For more information on the extended classes, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ The principal object contained in this property can be any type of object derived from the principal class: computer, user, or group. The <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> can also be an extended principal type that is defined by extending either <xref:System.DirectoryServices.AccountManagement.Principal>, <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal> or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal>. The type of the derived class object that is passed to this property determines the type of object that is queried. The resulting query contains a logical AND of all the properties set on the specified principal object. For more information, see the [Query by Example](https://msdn.microsoft.com/library/bb384378) overview topic. For more information on the extended classes, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
@@ -371,6 +391,8 @@
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> cannot be null or empty.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

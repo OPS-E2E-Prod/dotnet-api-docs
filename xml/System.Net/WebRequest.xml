@@ -1,4 +1,4 @@
-﻿<Type Name="WebRequest" FullName="System.Net.WebRequest">
+<Type Name="WebRequest" FullName="System.Net.WebRequest">
   <TypeSignature Language="C#" Value="public abstract class WebRequest : MarshalByRefObject, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit WebRequest extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebRequest" />
@@ -72,6 +72,8 @@
       <para>When you inherit from <see cref="T:System.Net.WebRequest" />, you must override the following members: <see cref="P:System.Net.WebRequest.Method" />, <see cref="P:System.Net.WebRequest.RequestUri" />, <see cref="P:System.Net.WebRequest.Headers" />, <see cref="P:System.Net.WebRequest.ContentLength" />, <see cref="P:System.Net.WebRequest.ContentType" />, <see cref="P:System.Net.WebRequest.Credentials" />, <see cref="P:System.Net.WebRequest.PreAuthenticate" />, <see cref="M:System.Net.WebRequest.GetRequestStream" />, <see cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />, <see cref="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />, <see cref="M:System.Net.WebRequest.GetResponse" />, <see cref="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />, and <see cref="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />. In addition, you must provide an implementation of the <see cref="T:System.Net.IWebRequestCreate" /> interface, which defines the <see cref="M:System.Net.IWebRequestCreate.Create(System.Uri)" /> method used when you call <see cref="M:System.Net.WebRequest.Create(System.Uri)" />. You must register the class that implements the <see cref="T:System.Net.IWebRequestCreate" /> interface, using the <see cref="M:System.Net.WebRequest.RegisterPrefix(System.String,System.Net.IWebRequestCreate)" /> method or the configuration file.</para>
     </block>
     <altmember cref="T:System.Net.HttpWebRequest" />
+    <related type="Article" href="~/docs/framework/network-programming/requesting-data.md">Requesting Data</related>
+    <related type="Article" href="~/docs/framework/network-programming/programming-pluggable-protocols.md">Programming Pluggable Protocols</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -108,6 +110,12 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.WebRequest" /> class.</summary>
@@ -153,6 +161,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
@@ -177,6 +191,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the constructor, when the constructor is not overridden in a descendant class.</exception>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -204,6 +219,12 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -305,6 +326,12 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -339,6 +366,7 @@
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="BeginGetResponse">
@@ -366,6 +394,12 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -404,6 +438,7 @@
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />
         <altmember cref="M:System.Net.WebRequest.GetResponse" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="CachePolicy">
@@ -517,6 +552,7 @@
         </block>
         <altmember cref="P:System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
         <altmember cref="P:System.Net.HttpWebRequest.ConnectionGroupName" />
+        <related type="Article" href="~/docs/framework/network-programming/connection-grouping.md">Connection Grouping</related>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -598,6 +634,12 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -663,6 +705,12 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Net.WebRequest</ReturnType>
       </ReturnValue>
@@ -722,6 +770,7 @@
           </block>  
   
  The URI specified in <paramref name="requestUriString" /> is not a valid URI.</exception>
+        <related type="Article" href="~/docs/framework/network-programming/programming-pluggable-protocols.md">Programming Pluggable Protocols</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -749,6 +798,12 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Net.WebRequest</ReturnType>
       </ReturnValue>
@@ -1199,6 +1254,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -1234,6 +1295,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">
@@ -1261,6 +1323,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Net.WebResponse</ReturnType>
       </ReturnValue>
@@ -1293,6 +1361,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1396,6 +1465,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/using-streams-on-the-network.md">Using Streams on the Network</related>
       </Docs>
     </Member>
     <Member MemberName="GetRequestStreamAsync">
@@ -1421,6 +1491,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
       </ReturnValue>
@@ -1524,6 +1600,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.WebResponse&gt;</ReturnType>
       </ReturnValue>
@@ -1609,6 +1691,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
@@ -1712,6 +1800,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -2147,6 +2241,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

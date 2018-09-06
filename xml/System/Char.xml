@@ -1,4 +1,4 @@
-﻿<Type Name="Char" FullName="System.Char">
+<Type Name="Char" FullName="System.Char">
   <TypeSignature Language="C#" Value="public struct Char : IComparable, IComparable&lt;char&gt;, IConvertible, IEquatable&lt;char&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit char extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;char&gt;, class System.IConvertible, class System.IEquatable`1&lt;char&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Char" />
@@ -3309,13 +3309,13 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
--   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), NEXT LINE (U+0085), and NO-BREAK SPACE (U+00A0).  
+-   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).  
   
  ]]></format>
         </remarks>
@@ -3371,11 +3371,11 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
 -   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).  
   
@@ -3448,11 +3448,11 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
 -   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).  
   
@@ -3616,6 +3616,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The length of <paramref name="s" /> is not 1.</exception>
         <altmember cref="M:System.Char.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -5051,6 +5052,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <altmember cref="M:System.Char.Parse(System.String)" />
         <altmember cref="M:System.Char.ToString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings in the .NET Framework</related>
       </Docs>
     </Member>
   </Members>
