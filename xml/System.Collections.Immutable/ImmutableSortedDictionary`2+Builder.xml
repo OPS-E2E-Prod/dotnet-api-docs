@@ -50,7 +50,7 @@
   <Docs>
     <summary>Represents a sorted dictionary that mutates with little or no memory allocations and that can produce or build on immutable sorted dictionary instances very efficiently.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -721,7 +721,7 @@
         <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
         <summary>Copies the elements of the dictionary to an array, starting at a particular array index.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1247,6 +1247,36 @@
       <Docs>
         <summary>Gets or sets the value comparer.</summary>
         <value>The value comparer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueRef">
+      <MemberSignature Language="C#" Value="public TValue&amp; ValueRef (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance TValue&amp; modreq(System.Runtime.InteropServices.InAttribute) ValueRef(!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.Builder.ValueRef(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValueRef (key As TKey) As TValue&amp;" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue&amp; ^ ValueRef(TKey key);" />
+      <MemberSignature Language="F#" Value="member this.ValueRef : 'Key -&gt; TValue&amp;" Usage="builder.ValueRef key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Readonly">
+        <ReturnType>TValue</ReturnType>
+        <Attributes>
+          <Attribute FrameworkAlternate="netcore-2.1">
+            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
