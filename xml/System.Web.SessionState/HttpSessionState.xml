@@ -803,7 +803,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Web.SessionState.HttpSessionState.Count" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
@@ -950,7 +950,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the amount of time, in minutes, allowed between requests before the session-state provider terminates the session.</summary>
+        <summary>Gets or sets the amount of time, in minutes, allowed between requests before the session-state provider terminates the session.</summary>
         <value>The time-out period, in minutes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
