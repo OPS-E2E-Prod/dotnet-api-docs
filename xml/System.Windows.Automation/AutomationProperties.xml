@@ -560,7 +560,7 @@
         <param name="element">The dependency object on which to get the property value.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Automation.AutomationProperties.PositionInSet" /> property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
         <returns>The value of the <see cref="P:System.Windows.Automation.AutomationProperties.PositionInSet" /> attached property of <paramref name="element" />.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The <xref:System.Windows.Automation.AutomationProperties.PositionInSet> property defines the ordinal position of the element within a set of elements that are considered to be siblings.
@@ -591,7 +591,7 @@ The <xref:System.Windows.Automation.AutomationProperties.PositionInSet> property
         <param name="element">The dependency object on which to get the property value.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Automation.AutomationProperties.SizeOfSet" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
         <returns>The value of the <see cref="P:System.Windows.Automation.AutomationProperties.SizeOfSet" /> attached property of <paramref name="element" />.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The <xref:System.Windows.Automation.AutomationProperties.SizeOfSet> property gets or sets the count of automation elements in a group or set that are considered to be siblings.
@@ -1146,8 +1146,14 @@ The `LiveSetting` attached property gets or sets a value of type <xref:System.Wi
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Describes the ordinal location of this element within a set of elements that are considered to be siblings.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `PositionInSet` attached property works in coordination with the <xref:System.Windows.Automation.AutomationProperties.SizeOfSet> dependency property to describe the ordinal position of this element in the set.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="PositionInSetProperty">
@@ -1555,14 +1561,14 @@ The `LiveSetting` attached property gets or sets a value of type <xref:System.Wi
         <param name="element">The dependency object on which to set the property.</param>
         <param name="value">The value to set.</param>
         <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.PositionInSet" /> attached property for the specified <see cref="System.Windows.DependencyObject" />. </summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The <xref:System.Windows.Automation.AutomationProperties.PositionInSet> property gets or sets the ordinal position of the element within a set of elements that are considered to be siblings.
 
          ]]></format>
-          </remarks>
-        </Docs>
+        </remarks>
+      </Docs>
     </Member>
     <Member MemberName="SetSizeOfSet">
       <MemberSignature Language="C#" Value="public static void SetSizeOfSet (System.Windows.DependencyObject element, int value);" />
@@ -1587,13 +1593,13 @@ The <xref:System.Windows.Automation.AutomationProperties.PositionInSet> property
         <param name="element">The dependency object on which to set the property.</param>
         <param name="value">The value to set.</param>
         <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.SizeOfSet" /> attached property for the specified <see cref="System.Windows.DependencyObject" />.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The <xref:System.Windows.Automation.AutomationProperties.SizeOfSet> property gets or sets the count of automation elements in a group or set that are considered to be siblings.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeOfSet">
@@ -1609,7 +1615,7 @@ The <xref:System.Windows.Automation.AutomationProperties.SizeOfSet> property get
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets the count of automation elements in a group or set that are considered to be siblings.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Dependency Property Information  
@@ -1620,7 +1626,7 @@ The <xref:System.Windows.Automation.AutomationProperties.SizeOfSet> property get
 |Metadata properties set to `true`|None|  
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeOfSetProperty">
